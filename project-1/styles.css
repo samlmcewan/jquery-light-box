@@ -1,7 +1,6 @@
 .container {
     margin: auto;
     width: 1215px;
-    color: #3b3b3b;
     text-align: center;
 }
 
@@ -24,4 +23,9 @@ h1 {
 a {
     margin: 16px;
     display: inline-block;
+}
+
+body {
+    color: #ffffff;
+    background-color: #151515;
 }
