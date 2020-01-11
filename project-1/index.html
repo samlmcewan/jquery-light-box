@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,58 +11,67 @@
         <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <header>
-                <span>—  My Trip to  —</span>
-                <h1>The Isle of Skye</h1>
-            </header>
+        <div class="container-fluid">
+            <div class="row">
+                <header>
+                    <span>—  My Trip to  —</span>
+                    <h1>The Isle of Skye</h1>
+                    <p>Lightbox gallery project</p>
+                </header>
+            </div>
             <!-- Thumbnail Images -->
-            
-                <a href="assets/images/image1.jpg" data-lightbox="collection1" data-title="Cooking">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb1.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb1.jpg" alt="Cooking"/>
-                    </picture>
-                </a>
-            
-            
-                <a href="assets/images/image2.jpg" data-lightbox="collection1" data-title="Fire">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb2.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb2.jpg" alt="Fire"/>
-                    </picture>
-                </a>
-            
+            <div class="row">    
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image1.jpg" data-lightbox="collection1" data-title="Cooking">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb1.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb1.jpg" alt="Cooking"/>
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image2.jpg" data-lightbox="collection1" data-title="Fire">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb2.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb2.jpg" alt="Fire"/>
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image3.jpeg" data-lightbox="collection1" data-title="Hills">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb3.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb3.jpeg" alt="Hills"/>
+                        </picture>
+                    </a>
+                </div>
+               
            
-                <a href="assets/images/image3.jpeg" data-lightbox="collection1" data-title="Hills">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb3.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb3.jpeg" alt="Hills"/>
-                    </picture>
-                </a>
-            
-            
-                <a href="assets/images/image4.jpeg" data-lightbox="collection1" data-title="Sleeping Dog">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb4.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb4.jpeg" alt="Sleeping Dog"/>
-                    </picture>
-                </a>
-            
-                <a href="assets/images/image5.jpeg" data-lightbox="collection1" data-title="Lamb">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb5.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb5.jpeg" alt="Lamb"/>
-                    </picture>
-                </a>
-            
-                <a href="assets/images/image6.jpeg" data-lightbox="collection1" data-title="Campfire">
-                    <picture>
-                        <source srcset="assets/thumbnails/webp/thumb6.webp" type="image/webp">
-                        <img src="assets/thumbnails/thumb6.jpeg" alt="Campfire"/>
-                    </picture>
-                </a>
-           
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image4.jpeg" data-lightbox="collection1" data-title="Sleeping Dog">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb4.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb4.jpeg" alt="Sleeping Dog"/>
+                        </picture>
+                    </a>
+                </div> 
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image5.jpeg" data-lightbox="collection1" data-title="Lamb">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb5.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb5.jpeg" alt="Lamb"/>
+                        </picture>
+                    </a>
+                </div>  
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="assets/images/image6.jpeg" data-lightbox="collection1" data-title="Campfire">
+                        <picture>
+                            <source srcset="assets/thumbnails/webp/thumb6.webp" type="image/webp">
+                            <img src="assets/thumbnails/thumb6.jpeg" alt="Campfire"/>
+                        </picture>
+                    </a>
+                </div>
+            </div>    
         </div>
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -72,6 +82,8 @@
               'alwaysShowNavOnTouchDevices': true,
               'wrapAround': true
             })
-        </script>
+        </script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,11 +1,15 @@
-.container {
+/*.container {
     margin: auto;
     width: 1215px;
     text-align: center;
+}*/
+.container-fluid {
+    margin: auto;
+    width: 100%;
 }
 
 header {
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 span {
@@ -28,4 +32,9 @@ a {
 body {
     color: #ffffff;
     background-color: #151515;
-}
+    text-align: center;
+/*
+.middle {
+    margin-left: 8px;
+    margin-right: 8px;
+}*/
